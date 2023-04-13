@@ -17,7 +17,7 @@ const [menu, setMenu]= useState(true)
         <div className=" hidden lg:block lg:w-[18%]">
           <Sidebar  />
         </div>
-        <div className= {`duration-200 w-[18%] fixed ${menu?`left-[100%]`:`left-[0%]`} w-[100vw] lg:hidden`}>
+        <div className= {` w-[100vw] duration-200  fixed ${menu?`left-[100%]`:`left-[0%]`}  lg:hidden`}>
           <Sidebar menu={menu} setMenu={setMenu} />
         </div>
        
