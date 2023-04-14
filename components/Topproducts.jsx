@@ -54,16 +54,16 @@ const Topproducts = () => {
 
       {/* Pie chart imported here */}
 
-      <div className="flex  lg:justify-center items-center gap-[90px] mt-3">
+      <div className="flex  lg:justify-center items-center gap-[25px] md:gap-[90px] mt-3">
 
         <div className=" w-[150px] ">
         <Pie data={data} options={options} />
         </div>
 
-        <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-2"> <div className={`bg-[#98D89E] w-[10px] h-[10px] rounded-[5px]`}></div><p className="text-[16px] font-[700]">{data.labels[0]}</p>   </div>
-          <div className="flex items-center gap-2"> <div className="bg-[#F6DC7D] w-[10px] h-[10px] rounded-[5px]"></div><p className="text-[16px] font-[700]">{data.labels[1]}</p>   </div>
-          <div className="flex items-center gap-2"> <div className="bg-[#EE8484] w-[10px] h-[10px] rounded-[5px]"></div><p className="text-[16px] font-[700]">{data.labels[2]}</p>   </div>
+        <div className="flex flex-col  gap-5">
+          <div className="flex items-center gap-2"> <div className={`bg-[#98D89E] w-[10px] h-[10px] rounded-[5px]`}></div><p className="text-[16px] md:font-[700]">{data.labels[0]}</p>   </div>
+          <div className="flex items-center gap-2"> <div className="bg-[#F6DC7D] w-[10px] h-[10px] rounded-[5px]"></div><p className="text-[16px] md:font-[700]">{data.labels[1]}</p>   </div>
+          <div className="flex items-center gap-2"> <div className="bg-[#EE8484] w-[10px] h-[10px] rounded-[5px]"></div><p className="text-[16px] md:font-[700]">{data.labels[2]}</p>   </div>
         </div>
       </div>
 
