@@ -12,12 +12,12 @@ const Dashboard = () => {
 const [menu, setMenu]= useState(true)
 
   return (
-    <section className=" py-[26px] px-[20px] lg:h-screen  bg-[#F5F5F5]">
-      <div className=" w-[1440px] mx-auto  flex gap-10">
+    <section className=" py-[26px]  lg:h-screen  bg-[#F5F5F5]">
+      <div className=" max-w-[1440px] mx-auto  flex gap-10">
         <div className=" hidden lg:block lg:w-[18%]">
           <Sidebar  />
         </div>
-        <div className= {` w-[100vw] duration-200  fixed ${menu?`left-[100%]`:`left-[0%]`}  lg:hidden`}>
+        <div className= {` z-10 w-[100vw] duration-200  fixed ${menu?`left-[100%]`:`left-[0%]`}  lg:hidden`}>
           <Sidebar menu={menu} setMenu={setMenu} />
         </div>
        

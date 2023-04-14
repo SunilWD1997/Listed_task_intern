@@ -17,7 +17,7 @@ export const Searchbar = ({menu, setMenu}) => {
         <div className=" relative top-[2px] text-[20px] font-[700] cursor-pointer hover:text-[grey] lg:hidden" onClick={()=>setMenu(!menu)}>
         <BiMenu/>
         </div>
-        <Link className="text-[24px] font-[700]" href="/">
+        <Link className=" hidden md:text-[24px] font-[700]" href="/">
           Dashboard
         </Link>
       </div>
