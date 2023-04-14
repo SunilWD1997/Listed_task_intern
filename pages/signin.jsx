@@ -29,7 +29,7 @@ const Signin = () => {
             <Form />
 
 
-            <div className="self-center"> <span className="text-[16px] font-[400] text-[#858585]">Don't have an account? </span><span className="text-[#346BD4] cursor-pointer hover:text-blue-800">Register here</span></div>
+            <div className="self-center"> <span className="text-[16px] font-[400] text-[#858585]">{`Don't have an account? `}</span><span className="text-[#346BD4] cursor-pointer hover:text-blue-800">Register here</span></div>
           </div>
         </div>
       </div>

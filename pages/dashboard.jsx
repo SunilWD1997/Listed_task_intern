@@ -13,7 +13,7 @@ const [menu, setMenu]= useState(true)
 
   return (
     <section className=" py-[26px]  lg:h-screen  bg-[#F5F5F5]">
-      <div className="max-w-[1440px]  mx-auto  flex gap-12">
+      <div className="max-w-[1440px]  mx-auto  flex gap-10">
         <div className=" hidden lg:block lg:w-[18%]">
           <Sidebar  />
         </div>
@@ -28,7 +28,7 @@ const [menu, setMenu]= useState(true)
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {CardData?.map((item) => {
-              return <Card item={item}/>
+              return <Card key={item.id} item={item}/>
             })}
           
           </div>

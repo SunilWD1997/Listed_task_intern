@@ -8,7 +8,7 @@ const Todayscedule = () => {
     <div className="bg-[#FFFFFF] rounded-[20px] px-[40px] py-[30px]">
       <div className="flex justify-between">
         <h3 className="text-[#000000] text-[18px] font-[700]">
-          Today's schedule
+         { `Today's schedule`}
         </h3>
         <Link className="text-[#DDDDDD] flex items-center gap-1" onClick={()=>setShow(!show)} href="">
           <span>See All</span> {show?<IoIosArrowForward />: <IoIosArrowDown/>}
