@@ -1,8 +1,22 @@
 import React from "react";
+import { useRouter } from 'next/router';
+
 
 const Form = () => {
+
+  const router = useRouter();
+
+const formSubmit = (e) =>{
+
+  e.preventDefault();
+
+  router.push('/dashboard');
+
+}
+
+
   return (
-    <form action="" className=" bg-[#FFFFFF] flex flex-col gap-4 rounded-[10px] p-5">
+    <form  className=" bg-[#FFFFFF] flex flex-col gap-4 rounded-[10px] p-5">
 
       {/* Enter email address field starts here */}
       <div className="flex flex-col">
@@ -34,7 +48,7 @@ const Form = () => {
       <p className=" text-[16px] font-[400] text-[#346BD4] cursor-pointer hover:text-blue-800">Forgot Password</p>
 
       {/* sign button starts here */}
-      <button className="w-full self-center text-[16px] font-[700] py-[7px] text-[#FFFFFF]  bg-[#000000] rounded-[10px] "> Sign In</button>
+      <button  type='button' onClick={formSubmit} className="w-full self-center text-[16px] font-[700] py-[7px] text-[#FFFFFF]  bg-[#000000] rounded-[10px] ">Sign In</button>
     </form>
   );
 };
