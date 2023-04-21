@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 import Activities from "@/components/Activities";
 import Card from "@/components/Card";
 import { Searchbar } from "@/components/Searchbar";
@@ -21,7 +10,7 @@ import { useState } from "react";
 
 import Login from '@/components/login';
 
-import { useSession, signIn, signOut } from "next-auth/react"
+import { useSession } from "next-auth/react"
 
 
 
