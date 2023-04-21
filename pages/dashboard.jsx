@@ -8,7 +8,21 @@ import Topproducts from "@/components/Topproducts";
 import { CardData } from "@/components/CardData";
 import { useState } from "react";
 
+import Login from '@/components/login';
+
+import { useSession, signIn, signOut } from "next-auth/react"
+
+
+
 const Dashboard = () => {
+
+
+const {data: session} = useSession();
+
+if(session == null){
+  return <Login/>
+}
+
 
 const [menu, setMenu]= useState(true);
 

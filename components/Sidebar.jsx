@@ -5,7 +5,7 @@ import {BsTags} from 'react-icons/bs';
 import { MdClose } from "react-icons/md";
 import Link from 'next/link';
 
-const Sidebar = ({menu, setMenu, setName}) => {
+const Sidebar = ({menu, setMenu}) => {
   return (
     <aside className="bg-black text-[white] h-full flex flex-col gap-5 rounded-[30px] px-[40px] lg:pl-[15%] py-10">
       
