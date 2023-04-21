@@ -81,7 +81,7 @@ export const data = {
 
 const LineChart = () => {
   return (
-    <div className='h-[170px] '> <Line options={options} data={data} />;</div>
+    <div className='h-[190px] '> <Line options={options} data={data} />;</div>
   )
 }
 
