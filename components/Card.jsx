@@ -4,7 +4,7 @@ const Card = ({item}) => {
 
     console.log(item)
   return (
-    <div className={`${item?.bg} flex flex-col rounded-[20px] p-[18px]`}>
+    <div className={`${item?.bg} flex flex-col rounded-[20px] px-[20px] py-[10px]`}>
         <div className="self-end text-[30px]">
         {item?.icons}
         </div>

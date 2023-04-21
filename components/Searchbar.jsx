@@ -2,12 +2,12 @@ import Link from "next/link";
 import { CgSearch } from "react-icons/cg";
 import { FaRegBell } from "react-icons/fa";
 import Image from "next/image";
-import { useState } from "react";
+
 
 import { BiMenu } from "react-icons/bi";
 
 
-export const Searchbar = ({menu, setMenu}) => {
+export const Searchbar = ({menu, setMenu, name}) => {
 
 
 
@@ -17,9 +17,10 @@ export const Searchbar = ({menu, setMenu}) => {
         <div className=" relative top-[2px] text-[20px] font-[700] cursor-pointer hover:text-[grey] lg:hidden" onClick={()=>setMenu(!menu)}>
         <BiMenu/>
         </div>
-        <Link className=" hidden md:text-[24px] font-[700]" href="/">
-          Dashboard
+        <Link className=" hidden  md:block md:text-[24px] md:font-[700]" href="/">
+         Dashboard
         </Link>
+      
       </div>
 
       <div className="flex items-center gap-5">
