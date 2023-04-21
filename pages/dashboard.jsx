@@ -23,12 +23,12 @@ const [menu, setMenu]= useState(true);
           <Sidebar    menu={menu} setMenu={setMenu} />
         </div>
        
-        <div className=" mx-auto w-[95%] lg:w-[75%] flex flex-col gap-5 py-[10px]">
+        <div className=" mx-auto w-[95%] lg:w-[75%] flex flex-col gap-8 py-[10px]">
           <div >
             <Searchbar  menu={menu} setMenu={setMenu} />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10">
             {CardData?.map((item) => {
               return <Card key={item.id} item={item}/>
             })}
