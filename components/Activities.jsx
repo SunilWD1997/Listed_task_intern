@@ -5,9 +5,9 @@ import { IoIosArrowDown} from 'react-icons/io'
 
 const Activities = () => {
   return (
-    <div className="bg-[#FFFFFF] rounded-[20px] pl-4 lg:px-10  py-[10px]">
+    <div className="bg-[#FFFFFF] rounded-[20px] pl-4 lg:px-10  py-4">
       <h2 className="text-[18px] text-[#000000] font-[700] relative top-1">Activities</h2>
-      <div className="flex justify-between pr-7 mb-[5px]">
+      <div className="flex justify-between pr-7 mb-2">
         <span className="text-[#858585] flex items-center"> <span>May - June 2021</span> <span><IoIosArrowDown/></span> </span>
         <div className="flex gap-7">
           <div className="flex items-center gap-2">

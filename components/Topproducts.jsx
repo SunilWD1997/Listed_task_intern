@@ -39,7 +39,7 @@ const Topproducts = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="bg-[#FFFFFF] rounded-[20px] px-[40px] py-[20px]">
+    <div className="bg-[#FFFFFF] rounded-[20px] px-[40px] py-7">
       <div className="flex justify-between">
         <h3 className="text-[#000000] text-[18px] font-[700]">Top Products</h3>
         <Link
