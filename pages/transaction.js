@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   return (
     <section className=" py-[26px]  lg:h-screen  bg-[#F5F5F5]">
-      <div className=" max-w-[1440px] mx-auto  flex gap-5">
+      <div className=" w-[99%] md:w-[96%] mx-auto  flex gap-5">
         <div className=" hidden lg:block lg:w-[18%]">
           <Sidebar />
         </div>
