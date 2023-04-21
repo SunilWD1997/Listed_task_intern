@@ -2,7 +2,8 @@ import Form from "@/components/Form";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
-import { signIn, signOut } from "next-auth/react"
+import { useSession, signIn, signOut } from "next-auth/react"
+
 
 const TrySignin = () => {
   return (
